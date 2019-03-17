@@ -1,9 +1,7 @@
 package mock
 
-import (
-	"calcFeeSample/internal/interface/api"
-)
+import "calcFeeSample/internal/app"
 
 type PaymentReport struct {
-	api.PaymentReport // モックはis-aなので埋め込み
+	app.PaymentReport // モックはis-aなので埋め込み
 }
