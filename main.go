@@ -4,7 +4,6 @@ import (
 	"calcFeeSample/external"
 	ex_mock "calcFeeSample/external/mock"
 	"calcFeeSample/internal"
-	"calcFeeSample/internal/mock"
 	in_mock "calcFeeSample/internal/mock"
 	"fmt"
 )
@@ -15,7 +14,7 @@ func main() {
 	fmt.Println(ex)
 
 	in_mock_cf := in_mock.CalcFee{}
-	in_mock_pr := mock.PaymentReport{}
+	in_mock_pr := in_mock.PaymentReport{}
 	in := internal.Internal{CalcFee: in_mock_cf, PaymentReport: in_mock_pr}
 	fmt.Println(in)
 }
